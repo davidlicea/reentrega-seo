@@ -1,0 +1,6 @@
+//Mixin
+
+@mixin medidas ($padding, $border-radius){
+    padding: $padding;
+    border-radius: $border-radius;
+}

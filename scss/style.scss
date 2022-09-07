@@ -1,0 +1,447 @@
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "base/variables";
+@import "base/mapas";
+@import "base/mixin";
+@import "base/extend";
+
+/*Estilos de body*/
+body{
+    background-color: $color-secundario;
+}
+
+/*Estilos de header*/
+.menu-dist{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.titulo-main{
+    font-size: 3rem;
+    color: $color-secundario;
+}
+
+.color-burger{
+    background-color: $color-secundario;
+}
+
+.font-color{
+    color: $color-secundario;
+}
+
+.menu-color{
+    background-color: $color-primario;
+}
+
+.menu-gap{
+    column-gap: 4rem;
+}
+
+.header-font{
+    font-family: 'Oswald', sans-serif;
+}
+
+/*Estilos de main*/
+main{
+    font-family: 'Oswald', sans-serif;
+    .titulo-pagina{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        font-family: 'Shojumaru', cursive;
+        font-size: auto;
+    }
+    .caja{
+        width: map-get($map: $caja-general, $key: width-general);
+        display: map-get($map: $caja-general, $key: display-general);
+        max-width: map-get($map: $caja-general, $key: maxwidth-general);
+        .tarjeta{
+            width: 100%;
+            margin: 20px;
+            border-radius: 6px;
+            overflow: hidden;
+            background: $color-secundario;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+            cursor: default;
+            transition: all 400ms ease;
+        }
+        .tarjeta:hover{
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+            transform: translateY(-3%);
+        }
+        .tarjeta img{
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+        }
+        .tarjeta .contenido{
+            padding: 0.5rem;
+        }
+        .tarjeta .contenido a{
+            @include medidas(10px,4px);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            color: $color-primario;
+            border: 1px solid $color-primario;
+            transition: all 400ms ease;
+        }
+        .tarjeta .contenido a:hover{
+            background: $color-primario;
+            color: $color-secundario;
+        }
+    }
+}
+/*Estilos de footer*/
+footer{
+    background: $color-primario;
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    font-family: 'Oswald', sans-serif;
+    .footer-text{
+        color: $color-secundario;
+        padding: 1rem;
+        font-size: small;
+    }
+    .social{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/*Estilos nosotros*/
+.tarjeta-nosotros{
+            width: 100%;
+            margin: 20px;
+            border-radius: 10px 20px 30px 40px;
+            overflow: hidden;
+            background: $color-nosotros;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+            cursor: default;
+            .contenido-nosotros{
+                padding: 1rem;
+            }
+            .img-nosotros{
+                width: 100%;
+                height: 14rem;
+                border-radius: 24px;
+            }
+        }
+.logo-nos{
+    display: none;
+}
+
+/*Estilos historia*/
+
+.contenedor-his{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    flex-direction: column;
+}
+
+.caja-his{
+    margin: 10px;
+    padding: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.img-his{
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos Productos-YuGiOh! */
+
+.section-cartas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .caja-cartas{
+        width: map-get($map: $caja-cartas, $key: width-cartas);
+        display: map-get($map: $caja-cartas, $key: display-cartas);
+        max-width: map-get($map: $caja-cartas, $key: maxwidth-cartas);
+        .tarjeta-yugioh{
+            width: 100%;
+            margin: 20px;
+            border-radius: 6px;
+            overflow: hidden;
+            background: $color-cartasy;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+            cursor: default;
+            transition: all 400ms ease;
+        }
+        .tarjeta-yugioh:hover{
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+            transform: translateY(-3%);
+        }
+        .tarjeta img{
+            width: 100%;
+            height: auto;
+        }
+        .contenido.yugioh{
+            padding: 1rem;
+        }
+        .nombre-carta{
+            font-size: 1.5rem;
+            padding-left: 1rem;
+        }
+        .fuerza-carta{
+            padding-left: 1rem;
+            padding-right: 1rem;
+            @extend %flex;
+        }
+        .efecto-carta{
+            padding-left: 1rem;
+            padding-right: 1rem;
+            text-align: justify;
+        }
+    }
+}
+
+/*Estilos pokemon*/
+.tarjeta-pokemon{
+        width: 100%;
+        margin: 20px;
+        border-radius: 6px;
+        overflow: hidden;
+        background: $color-cartasp;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+        cursor: default;
+        transition: all 400ms ease;
+    }
+    .tarjeta-pokemon:hover{
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+        transform: translateY(-3%);
+    }
+
+/*Estilos Digimon*/
+.tarjeta-digimon{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: $color-cartasd;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.tarjeta-digimon:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+/*Estilos Magic*/
+.tarjeta-magic{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: $color-cartasm;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.tarjeta-magic:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+/*Estilos Cuenta*/
+
+.main-cuenta{
+    display: flex;
+    justify-content: center;
+    .form-register{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: $color-primario;
+        padding: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: $color-secundario;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);      
+    }        
+    .form-register h4{
+        font-size: 22px;
+        margin-bottom: 1rem;
+    }
+    .controls{
+        @include medidas(10px,6px);
+        width: 100%;
+        background: $color-secundario;
+        margin-bottom: 1rem;
+        border: 1px solid;
+        font-size: 18px;
+    }
+    .form-register p{
+        text-align: center;
+        font-size: 1rem;
+    }    
+    .form-register a{
+        color: #1C6DD0;
+        text-decoration: none;
+    }   
+    .form-register a:hover{
+        color: $color-secundario;
+        text-decoration: underline;
+    }  
+    .form-register .botons{
+        width: 100%;
+        background: #1C6DD0;
+        border: none;
+        padding: 12px;
+        color: $color-secundario;
+        font-size: 16px;
+        margin-top: 1rem;
+    }
+}
+
+/*Mediaquerie Tablets*/
+@media screen and (min-width:600px){
+    /* Pagina Nosotros */
+        .main-nosotros{
+            display: flex;
+            flex-direction: column;
+            .tarjeta-nosotros{
+                width: 100%;
+                .contenido-nosotros{
+                    font-size: 1.2rem;
+                }
+            }
+            .section-nos{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            .section-nos2{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                .caja{
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+            .logo-nos{
+                display: block;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+/*Mediaquerie Computadoras*/
+@media screen and (min-width: 1024px){
+    
+    /*Main inicio*/
+    .main-inicio{
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Pagina Nosotros */
+    .main-nosotros{
+        display: flex;
+        flex-direction: column;
+        .tarjeta-nosotros{
+            width: 70%;
+            .contenido-nosotros{
+                font-size: 1.4rem;
+            }
+        }
+        .section-nos{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .section-nos2{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .caja{
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+        .logo-nos{
+            display: block;
+            margin-right: 10rem;
+        }
+    }
+
+    /* Pagina Historia */
+    .main-his{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+
+        grid-template-areas: "caja-his1 caja-his2"
+                             "img-his1 img-his2"
+                             "caja-his3 caja-his4"
+                             "img-his3 img-his4";
+    }
+
+    .caja-his1{
+        grid-area: caja-his1;
+    }
+
+    .caja-his2{
+        grid-area: caja-his2;
+    }
+
+    .caja-his3{
+        grid-area: caja-his3;
+    }
+
+    .caja-his4{
+        grid-area: caja-his4;
+    }
+
+    .img-his1{
+        grid-area: img-his1;
+    }
+
+    .img-his2{
+        grid-area: img-his2;
+    }
+
+    .img-his3{
+        grid-area: img-his3;
+    }
+
+    .img-his4{
+        grid-area: img-his4;
+    }
+
+    /* Pagina Cuenta */
+
+    .main-cuenta{
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+
+    /*Pagina Yugioh */
+
+    .section-cartas{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+
+

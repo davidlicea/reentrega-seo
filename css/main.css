@@ -1,0 +1,349 @@
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.section-cartas .caja-cartas .fuerza-carta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+/*Estilos de body*/
+body {
+  background-color: #F0F0F0; }
+
+/*Estilos de header*/
+.menu-dist {
+  display: flex;
+  justify-content: flex-end; }
+
+.titulo-main {
+  font-size: 3rem;
+  color: #F0F0F0; }
+
+.color-burger {
+  background-color: #F0F0F0; }
+
+.font-color {
+  color: #F0F0F0; }
+
+.menu-color {
+  background-color: #21325E; }
+
+.menu-gap {
+  column-gap: 4rem; }
+
+.header-font {
+  font-family: 'Oswald', sans-serif; }
+
+/*Estilos de main*/
+main {
+  font-family: 'Oswald', sans-serif; }
+  main .titulo-pagina {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    font-family: 'Shojumaru', cursive;
+    font-size: auto; }
+  main .caja {
+    width: 100%;
+    display: flex;
+    max-width: 1100px; }
+    main .caja .tarjeta {
+      width: 100%;
+      margin: 20px;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #F0F0F0;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+      cursor: default;
+      transition: all 400ms ease; }
+    main .caja .tarjeta:hover {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+      transform: translateY(-3%); }
+    main .caja .tarjeta img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover; }
+    main .caja .tarjeta .contenido {
+      padding: 0.5rem; }
+    main .caja .tarjeta .contenido a {
+      padding: 10px;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      color: #21325E;
+      border: 1px solid #21325E;
+      transition: all 400ms ease; }
+    main .caja .tarjeta .contenido a:hover {
+      background: #21325E;
+      color: #F0F0F0; }
+
+/*Estilos de footer*/
+footer {
+  background: #21325E;
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  font-family: 'Oswald', sans-serif; }
+  footer .footer-text {
+    color: #F0F0F0;
+    padding: 1rem;
+    font-size: small; }
+  footer .social {
+    display: flex;
+    justify-content: space-between; }
+
+/*Estilos nosotros*/
+.tarjeta-nosotros {
+  width: 100%;
+  margin: 20px;
+  border-radius: 10px 20px 30px 40px;
+  overflow: hidden;
+  background: #FFF6F6;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default; }
+  .tarjeta-nosotros .contenido-nosotros {
+    padding: 1rem; }
+  .tarjeta-nosotros .img-nosotros {
+    width: 100%;
+    height: 14rem;
+    border-radius: 24px; }
+
+.logo-nos {
+  display: none; }
+
+/*Estilos historia*/
+.contenedor-his {
+  width: 100%;
+  display: flex;
+  max-width: 1100px;
+  flex-direction: column; }
+
+.caja-his {
+  margin: 10px;
+  padding: 1rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
+
+.img-his {
+  display: flex;
+  justify-content: center; }
+
+/* Estilos Productos-YuGiOh! */
+.section-cartas {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section-cartas .caja-cartas {
+    width: 100%;
+    display: flex;
+    max-width: 361px; }
+    .section-cartas .caja-cartas .tarjeta-yugioh {
+      width: 100%;
+      margin: 20px;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #FFE867;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+      cursor: default;
+      transition: all 400ms ease; }
+    .section-cartas .caja-cartas .tarjeta-yugioh:hover {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+      transform: translateY(-3%); }
+    .section-cartas .caja-cartas .tarjeta img {
+      width: 100%;
+      height: auto; }
+    .section-cartas .caja-cartas .contenido.yugioh {
+      padding: 1rem; }
+    .section-cartas .caja-cartas .nombre-carta {
+      font-size: 1.5rem;
+      padding-left: 1rem; }
+    .section-cartas .caja-cartas .fuerza-carta {
+      padding-left: 1rem;
+      padding-right: 1rem; }
+    .section-cartas .caja-cartas .efecto-carta {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      text-align: justify; }
+
+/*Estilos pokemon*/
+.tarjeta-pokemon {
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #277BC0;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease; }
+
+.tarjeta-pokemon:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%); }
+
+/*Estilos Digimon*/
+.tarjeta-digimon {
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #B7C4CF;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease; }
+
+.tarjeta-digimon:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%); }
+
+/*Estilos Magic*/
+.tarjeta-magic {
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #C4DFAA;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease; }
+
+.tarjeta-magic:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%); }
+
+/*Estilos Cuenta*/
+.main-cuenta {
+  display: flex;
+  justify-content: center; }
+  .main-cuenta .form-register {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #21325E;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #F0F0F0;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
+  .main-cuenta .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 1rem; }
+  .main-cuenta .controls {
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+    background: #F0F0F0;
+    margin-bottom: 1rem;
+    border: 1px solid;
+    font-size: 18px; }
+  .main-cuenta .form-register p {
+    text-align: center;
+    font-size: 1rem; }
+  .main-cuenta .form-register a {
+    color: #1C6DD0;
+    text-decoration: none; }
+  .main-cuenta .form-register a:hover {
+    color: #F0F0F0;
+    text-decoration: underline; }
+  .main-cuenta .form-register .botons {
+    width: 100%;
+    background: #1C6DD0;
+    border: none;
+    padding: 12px;
+    color: #F0F0F0;
+    font-size: 16px;
+    margin-top: 1rem; }
+
+/*Mediaquerie Tablets*/
+@media screen and (min-width: 600px) {
+  /* Pagina Nosotros */
+  .main-nosotros {
+    display: flex;
+    flex-direction: column; }
+    .main-nosotros .tarjeta-nosotros {
+      width: 100%; }
+      .main-nosotros .tarjeta-nosotros .contenido-nosotros {
+        font-size: 1.2rem; }
+    .main-nosotros .section-nos {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+    .main-nosotros .section-nos2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .main-nosotros .section-nos2 .caja {
+        display: flex;
+        justify-content: flex-end; }
+    .main-nosotros .logo-nos {
+      display: block;
+      display: flex;
+      justify-content: center; } }
+
+/*Mediaquerie Computadoras*/
+@media screen and (min-width: 1024px) {
+  /*Main inicio*/
+  .main-inicio {
+    display: flex;
+    flex-direction: row; }
+  /* Pagina Nosotros */
+  .main-nosotros {
+    display: flex;
+    flex-direction: column; }
+    .main-nosotros .tarjeta-nosotros {
+      width: 70%; }
+      .main-nosotros .tarjeta-nosotros .contenido-nosotros {
+        font-size: 1.4rem; }
+    .main-nosotros .section-nos {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+    .main-nosotros .section-nos2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .main-nosotros .section-nos2 .caja {
+        display: flex;
+        justify-content: flex-end; }
+    .main-nosotros .logo-nos {
+      display: block;
+      margin-right: 10rem; }
+  /* Pagina Historia */
+  .main-his {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: "caja-his1 caja-his2" "img-his1 img-his2" "caja-his3 caja-his4" "img-his3 img-his4"; }
+  .caja-his1 {
+    grid-area: caja-his1; }
+  .caja-his2 {
+    grid-area: caja-his2; }
+  .caja-his3 {
+    grid-area: caja-his3; }
+  .caja-his4 {
+    grid-area: caja-his4; }
+  .img-his1 {
+    grid-area: img-his1; }
+  .img-his2 {
+    grid-area: img-his2; }
+  .img-his3 {
+    grid-area: img-his3; }
+  .img-his4 {
+    grid-area: img-his4; }
+  /* Pagina Cuenta */
+  .main-cuenta {
+    margin-left: 20rem;
+    margin-right: 20rem; }
+  /*Pagina Yugioh */
+  .section-cartas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; } }
